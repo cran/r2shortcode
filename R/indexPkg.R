@@ -8,11 +8,12 @@
 #'
 #' @examples
 #' \donttest{
+#' if(interactive()){
 #' pkgname <- 'qpdf'
 #' shortenPkg(pkgname,TRUE)
 #' index(pkgname)
 #' }
-#'
+#' }
 #' @export
 #'
 
@@ -34,7 +35,7 @@ index <- function(pkg = stop("Enter a package name to index")) {
     if (nrow(fetchPkgList)) {
       yOutput <- fetchPkgList[, c(1:2)]
       names(yOutput) <- c("Short Function", "Original Function")
-      utils::View(yOutput)
+      utils::head(yOutput)
       message("Use help(short-function-name) or whatis(short-function-name) to get the definitions.")
     }
     else {

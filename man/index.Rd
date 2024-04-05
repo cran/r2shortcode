@@ -17,9 +17,10 @@ This function will provide you the list of shorthand functions created for a pac
 }
 \examples{
 \donttest{
+if(interactive()){
 pkgname <- 'qpdf'
 shortenPkg(pkgname,TRUE)
 index(pkgname)
 }
-
+}
 }

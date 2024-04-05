@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' \donttest{
-#' pkgName = 'qpdf'
+#' pkgName = 'quickcode'
 #' shortenPkg(pkgName)
 #' discardShortcodes(pkgName)
 #' }

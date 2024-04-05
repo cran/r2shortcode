@@ -25,7 +25,7 @@ This will discard all shorthand functions created and delete them from stores as
 }
 \examples{
 \donttest{
-pkgName = 'qpdf'
+pkgName = 'quickcode'
 shortenPkg(pkgName)
 discardShortcodes(pkgName)
 }
